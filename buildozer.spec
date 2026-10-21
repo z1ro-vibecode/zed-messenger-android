@@ -42,8 +42,8 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.13.9, hostpython3==3.13.9, kivy, websockets, requests, urllib3, charset-normalizer, idna, certifi
-p4a.python_version = 3.13
+requirements = python3==3.9.18,hostpython3==3.9.18,kivy,websockets,requests,urllib3,charset-normalizer,idna,certifi,jnius
+p4a.python_version = 3.9
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
@@ -103,7 +103,7 @@ fullscreen = 0
 
 # (list) Permissions
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions.html for all the supported syntaxes and properties)
-android.permissions = android.permission.INTERNET,ACCESS_NETWORK_STATE
+android.permissions = INTERNET, ACCESS_NETWORK_STATE
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
@@ -118,7 +118,7 @@ android.minapi = 21
 #android.sdk = 20
 
 # (str) Android NDK version to use
-#android.ndk = 23b
+android.ndk = 25b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 21
